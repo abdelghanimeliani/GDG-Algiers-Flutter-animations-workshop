@@ -7,33 +7,36 @@ class HeroDestination extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: Column(
-            children: [
-            Container(
-            height: 400,
-            width: 400,
-            child: Center(
-              child: Hero(
-                tag: 'logo',
-                  child: Image.asset("assets/gdg_logo.png")) ,
-            ),
-          ) ,
-              SizedBox(height: 30,) ,
-             const Text(
-                "GDG for once GDG forever" ,
-                style: TextStyle(
-                  fontWeight: FontWeight.bold ,
-                  fontSize: 25 ,
-                  color: Colors.grey ,
+      body: Stack(
+            children:[ Positioned(
+              bottom: 100,
+              left: 0,
+              right: 0,
+              child: Column(
+                children: [
+                Container(
+                height: 100,
+                width: 300,
+                child: Center(
+                  child: Hero(
+                    tag: 'logo',
+                      child: Image.asset("assets/gdg_logo.png")) ,
                 ),
-              )
+              ) ,
 
-            ],
+                 const Text(
+                    "GDG for once GDG forever" ,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold ,
+                      fontSize: 25 ,
+                      color: Colors.black45 ,
+                    ),
+                  )
+
+                ],
+              ),
+            ),]
           ),
-        ),
-      ),
-    );
+         );
   }
 }

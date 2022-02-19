@@ -12,15 +12,18 @@ class HeroSource extends StatelessWidget{
               transitionDuration: Duration(seconds: 2),
               pageBuilder: (_, __, ___) => HeroDestination())) ;
         },
-        child: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-              child: Hero(
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 200 ),
+          child: Center(
+            child: Container(
+              height: 300,
+              width: 300,
+                child: Hero(
 
-                tag: 'logo',
-                  child: Image.asset("assets/gdg_logo.png")) ,
-            ),
+                  tag: 'logo',
+                    child: Image.asset("assets/gdg_logo.png")) ,
+              ),
+          ),
         ),
         ),
 
