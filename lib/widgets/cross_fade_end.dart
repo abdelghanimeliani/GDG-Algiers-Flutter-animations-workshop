@@ -16,10 +16,10 @@ class CrossFadeEnd extends StatelessWidget {
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.green,
+                Colors.white60,
               ],)
         ),
-        child: Image.asset("assets/gdg_logo.png"),
+        child: Image.asset("assets/wtm_logo.png"),
       );
   }
 }

@@ -6,22 +6,20 @@ class CrossFadeStart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+    return Container(
         height: 300,
         width: 300,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(150),
             gradient: const LinearGradient(
               begin: Alignment.topRight,
               end: Alignment.bottomLeft,
               colors: [
+                Colors.white60,
                 Colors.blue,
-                Colors.green,
               ],)
         ),
         child: Image.asset("assets/gdg_logo.png"),
-      ),
-    );
+      );
   }
 }
