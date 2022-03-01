@@ -58,9 +58,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
   Widget build(BuildContext context) {
     return SlideTransition(
       position: _offsetAnimation,
-      child: const Padding(
+      child:  Padding(
         padding: EdgeInsets.all(8.0),
-        child: FlutterLogo(size: 150.0),
+        child: Container(
+          height: 300,
+          width: 300,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(150),
+              gradient: const LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+                  Colors.white60,
+                  Colors.blue,
+                ],)
+          ),
+          child: Image.asset("assets/gdg_logo.png"),
+        ),
       ),
     );
   }
