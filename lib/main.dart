@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gdg_algiers_flutter_animations_workshop/widgets/animated_list.dart';
 import 'package:gdg_algiers_flutter_animations_workshop/widgets/cross_fade_animation.dart';
 import 'package:gdg_algiers_flutter_animations_workshop/widgets/cross_fade_end.dart';
 import 'package:gdg_algiers_flutter_animations_workshop/widgets/hero_source.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
 
       ),
-      home: TweenAnimationExemple() ,
+      home: AnimatedListExemple(),
     );
   }
 }
