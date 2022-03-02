@@ -23,7 +23,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget>
     end: const Offset(1.5, 0.0),
   ).animate(CurvedAnimation(
     parent: _controller,
-    curve: Curves.easeInOutSine ,
+    curve: Curves.easeInOutSine      ,
   ));
 
   @override
