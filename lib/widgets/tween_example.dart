@@ -51,3 +51,52 @@ class _TweenAnimationExempleState extends State<TweenAnimationExemple> {
     );
   }
 }
+
+
+// hada-exemple-wehdakhor
+
+class TweenAnimatonexp extends StatefulWidget {
+  const TweenAnimatonexp({Key? key}) : super(key: key);
+
+  @override
+  _TweenAnimatonexpState createState() => _TweenAnimatonexpState();
+}
+
+class _TweenAnimatonexpState extends State<TweenAnimatonexp> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+      body:Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TweenAnimationBuilder(
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset("assets/gdg_logo.png") ,
+
+                  ],
+                ),
+              ),
+              duration: Duration(seconds: 2),
+              tween: Tween(begin: 0.0 , end: 1.0),
+              builder: (BuildContext context, double value, Widget? child) {
+                return Padding(
+                  padding: EdgeInsets.only(left: value*50 , right: 50 * value),
+                  child: Opacity(
+                    opacity: value ,
+                    child: child,
+                  ),
+                ) ;
+              },
+            ),
+          ],
+        ),
+      ) ,
+    );
+  }
+}
