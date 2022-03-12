@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
 
       ),
-      home: AnnimatedContainerExp(),
+      //change this with el annimation li rka hab tchoufha
+      home: AnimatedListExemple(),
     );
   }
 }
